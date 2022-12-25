@@ -2,6 +2,7 @@
 -- See `:help telescope` and `:help telescope.setup()`
 require('telescope').setup {
   defaults = {
+    file_ignore_patterns = {"%.obj","%.dll"},
     mappings = {
       i = {
         ['<C-u>'] = false,
