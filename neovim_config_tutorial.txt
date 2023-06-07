@@ -2,3 +2,22 @@ init.lua can be thought of as an index.html so when we require("folder") it will
 if we want to load something selectively we can do require("folder.{lua_file_name}")
 
 package managers are needed to manage the downloading of packages. Im using packer and added a plugin.lua file for that.
+
+
+In Neovim, the "after" directory is used for organizing additional configuration files that are loaded after the default configuration files. This directory allows you to override or extend the default behavior of Neovim without directly modifying the original configuration files.
+
+The "after" directory is typically located within the Neovim configuration directory:
+
+- Unix/Linux: `$HOME/.config/nvim/after/`
+- Windows: `%USERPROFILE%\AppData\Local\nvim\after\`
+
+Within the "after" directory, you can create subdirectories that correspond to the original configuration file paths. For example, if you want to modify the behavior of a plugin or change settings specific to a file type, you can create a directory structure that mirrors the original configuration files.
+
+For instance, if you want to override the behavior of a plugin defined in the "ftplugin" (filetype plugin) directory, you would create the following structure within the "after" directory:
+
+- Unix/Linux: `$HOME/.config/nvim/after/ftplugin/`
+- Windows: `%USERPROFILE%\AppData\Local\nvim\after\ftplugin\`
+
+Inside the appropriate subdirectory, you can place VimScript or Lua configuration files that will be executed after the original files are loaded. This allows you to customize the behavior without directly modifying the original files, making it easier to manage your customizations and keep them separate from the core configuration.
+
+Using the "after" directory is a recommended approach for extending and overriding Neovim's behavior, as it provides a clean and maintainable way to customize your editor.
