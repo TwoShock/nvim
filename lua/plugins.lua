@@ -13,5 +13,6 @@ return require('packer').startup(function(use)
 		run = ':TSUpdate'
 	}--handles parsing language files and coloring code
 	use('theprimeagen/harpoon')
+	use('mbbill/undotree') -- manages complex undo history
 
 end)
