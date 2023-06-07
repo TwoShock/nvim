@@ -1,0 +1,1 @@
+init.lua can be thought of as an index.html so when we require("package") it will search for init.lua and load whatever is in there
