@@ -1,2 +1,3 @@
-require("TwoShock")
-print("hello world")
+
+require("TwoShock.remap")
+

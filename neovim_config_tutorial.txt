@@ -1,1 +1,4 @@
-init.lua can be thought of as an index.html so when we require("package") it will search for init.lua and load whatever is in there
+init.lua can be thought of as an index.html so when we require("folder") it will search for init.lua and load whatever is in there
+if we want to load something selectively we can do require("folder.{lua_file_name}")
+
+package managers are needed to manage the downloading of packages. Im using packer and added a plugin.lua file for that.
