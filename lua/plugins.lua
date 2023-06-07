@@ -7,4 +7,10 @@ return require('packer').startup(function(use)
 		requires = { {'nvim-lua/plenary.nvim'} } --handles file search and grep searches
 	}
 	use { "catppuccin/nvim", as = "catppuccin" } --color scheme plugin
+
+	use {
+		'nvim-treesitter/nvim-treesitter',
+		run = ':TSUpdate'
+	}--handles parsing language files and coloring code
+
 end)
