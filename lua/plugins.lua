@@ -14,5 +14,6 @@ return require('packer').startup(function(use)
 	}--handles parsing language files and coloring code
 	use('theprimeagen/harpoon')
 	use('mbbill/undotree') -- manages complex undo history
+	use('tpope/vim-fugitive')
 
 end)
