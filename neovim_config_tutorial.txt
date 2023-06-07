@@ -24,4 +24,8 @@ Inside the appropriate subdirectory, you can place VimScript or Lua configuratio
 Using the "after" directory is a recommended approach for extending and overriding Neovim's behavior, as it provides a clean and maintainable way to customize your editor.
 =============================================================================================================================================================================================================================
 
-Fyi for telescope grep search there is a dependency on rip grep https://github.com/BurntSushi/ripgrep#installation
+Telescope grep search there is a dependency on rip grep https://github.com/BurntSushi/ripgrep#installation
+
+Treesitter is used for coloring the text of code in the editor for various languages 
+
+Harpoon is used for acting as a way to mark various places in vim

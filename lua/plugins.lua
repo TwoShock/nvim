@@ -12,5 +12,6 @@ return require('packer').startup(function(use)
 		'nvim-treesitter/nvim-treesitter',
 		run = ':TSUpdate'
 	}--handles parsing language files and coloring code
+	use('theprimeagen/harpoon')
 
 end)
