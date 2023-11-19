@@ -1,4 +1,3 @@
-
-require("TwoShock.remap")
 require("TwoShock.set")
+require("TwoShock.remap")
 
